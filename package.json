@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build:test": "tsc -b && vite build --mode test",
+    "build": "tsc -b && vite build --mode production",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.8",
     "pinia": "^2.2.8",
     "vue": "^3.5.12",
     "vue-router": "^4.5.0"
