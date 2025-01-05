@@ -1,9 +1,9 @@
 import request from '@/utils/request'
 
-export const getScoreDetail = (params: { userId: string }) => {
+export const getTest = (params: { userId: string }) => {
   return request({
     method: 'get',
-    url: '/teach/hk/Amanuensis/getTalentScore',
+    url: '/test',
     params,
   })
 }
